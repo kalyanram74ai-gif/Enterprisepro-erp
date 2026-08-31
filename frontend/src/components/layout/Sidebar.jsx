@@ -25,6 +25,7 @@ import {
   Boxes,
   ShieldAlert,
   Settings,
+  Webhook,
   ChevronDown,
   ChevronRight,
   Layers,
@@ -128,7 +129,8 @@ export function Sidebar() {
       permission: MODULE_PERMISSIONS.AUDIT,
       items: [
         { path: '/system/audit', label: 'Audit Trail', icon: ShieldAlert },
-        { path: '/system/settings', label: 'System Settings', icon: Settings }
+        { path: '/system/settings', label: 'System Settings', icon: Settings },
+        { path: '/system/webhooks', label: 'Event Webhooks', icon: Webhook }
       ]
     }
   ];

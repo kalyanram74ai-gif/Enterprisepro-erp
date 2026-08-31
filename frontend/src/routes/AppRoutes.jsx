@@ -50,6 +50,7 @@ import { AssetManager } from '../pages/operations/AssetManager';
 // System & Audit
 import { AuditLogs } from '../pages/system/AuditLogs';
 import { SystemSettings } from '../pages/system/SystemSettings';
+import { WebhookSettings } from '../pages/system/WebhookSettings';
 
 export function AppRoutes() {
   return (
@@ -106,6 +107,7 @@ export function AppRoutes() {
           {/* System Admin */}
           <Route path="/system/audit" element={<AuditLogs />} />
           <Route path="/system/settings" element={<SystemSettings />} />
+          <Route path="/system/webhooks" element={<WebhookSettings />} />
         </Route>
       </Route>
 
