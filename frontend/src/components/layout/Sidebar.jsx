@@ -55,7 +55,8 @@ export function Sidebar() {
       id: 'core',
       title: 'CORE',
       items: [
-        { path: '/dashboard', label: 'Executive Dashboard', icon: LayoutDashboard, permission: MODULE_PERMISSIONS.DASHBOARD }
+        { path: '/dashboard', label: 'Executive Dashboard', icon: LayoutDashboard, permission: MODULE_PERMISSIONS.DASHBOARD },
+        { path: '/analytics/bi', label: 'BI & Analytics Suite', icon: Boxes, permission: MODULE_PERMISSIONS.DASHBOARD }
       ]
     },
     {

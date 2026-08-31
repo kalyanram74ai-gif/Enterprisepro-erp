@@ -12,6 +12,7 @@ import { Register } from '../pages/auth/Register';
 
 // Core Dashboard
 import { ExecutiveDashboard } from '../pages/dashboard/ExecutiveDashboard';
+import { BiAnalyticsDashboard } from '../pages/analytics/BiAnalyticsDashboard';
 
 // HR & Payroll
 import { EmployeeDirectory } from '../pages/hr/EmployeeDirectory';
@@ -68,6 +69,7 @@ export function AppRoutes() {
 
           {/* Executive Dashboard */}
           <Route path="/dashboard" element={<ExecutiveDashboard />} />
+          <Route path="/analytics/bi" element={<BiAnalyticsDashboard />} />
 
           {/* HR & Payroll */}
           <Route path="/hr/employees" element={<EmployeeDirectory />} />
