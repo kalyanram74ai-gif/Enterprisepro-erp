@@ -29,6 +29,9 @@ public class AuditLog {
     @Column(length = 255)
     private String userAgent;
 
+    @Column(length = 20)
+    private String severity = "LOW"; // LOW, MEDIUM, HIGH, CRITICAL
+
     private LocalDateTime timestamp;
 
     @PrePersist
@@ -109,5 +112,13 @@ public class AuditLog {
 
     public void setTimestamp(LocalDateTime timestamp) {
         this.timestamp = timestamp;
+    }
+
+    public String getSeverity() {
+        return severity != null ? severity : "LOW";
+    }
+
+    public void setSeverity(String severity) {
+        this.severity = severity;
     }
 }

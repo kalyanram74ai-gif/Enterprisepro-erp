@@ -11,6 +11,7 @@ public class AuditLogDto {
     private String description;
     private String ipAddress;
     private String userAgent;
+    private String severity;
     private LocalDateTime timestamp;
 
     public AuditLogDto() {}
@@ -77,5 +78,13 @@ public class AuditLogDto {
 
     public void setTimestamp(LocalDateTime timestamp) {
         this.timestamp = timestamp;
+    }
+
+    public String getSeverity() {
+        return severity != null ? severity : "LOW";
+    }
+
+    public void setSeverity(String severity) {
+        this.severity = severity;
     }
 }
