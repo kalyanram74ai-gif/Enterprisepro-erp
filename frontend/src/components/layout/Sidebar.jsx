@@ -9,6 +9,7 @@ import {
   CreditCard,
   BookOpen,
   DollarSign,
+  Coins,
   Receipt,
   FileSpreadsheet,
   Package,
@@ -78,7 +79,8 @@ export function Sidebar() {
         { path: '/finance/accounts', label: 'Chart of Accounts', icon: BookOpen },
         { path: '/finance/journal', label: 'Journal Entries', icon: DollarSign },
         { path: '/finance/expenses', label: 'Expenses Ledger', icon: Receipt },
-        { path: '/finance/reports', label: 'Financial Reports', icon: FileSpreadsheet }
+        { path: '/finance/reports', label: 'Financial Reports', icon: FileSpreadsheet },
+        { path: '/finance/currencies', label: 'Multi-Currency & FX', icon: Coins }
       ]
     },
     {

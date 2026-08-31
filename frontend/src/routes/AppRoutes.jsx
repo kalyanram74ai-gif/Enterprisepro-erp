@@ -25,6 +25,7 @@ import { ChartOfAccounts } from '../pages/finance/ChartOfAccounts';
 import { JournalEntries } from '../pages/finance/JournalEntries';
 import { ExpenseTracker } from '../pages/finance/ExpenseTracker';
 import { FinancialReports } from '../pages/finance/FinancialReports';
+import { CurrencyManager } from '../pages/finance/CurrencyManager';
 
 // Inventory & Warehouse
 import { ProductCatalog } from '../pages/inventory/ProductCatalog';
@@ -81,6 +82,7 @@ export function AppRoutes() {
           <Route path="/finance/journal" element={<JournalEntries />} />
           <Route path="/finance/expenses" element={<ExpenseTracker />} />
           <Route path="/finance/reports" element={<FinancialReports />} />
+          <Route path="/finance/currencies" element={<CurrencyManager />} />
 
           {/* Inventory & Warehousing */}
           <Route path="/inventory/products" element={<ProductCatalog />} />
